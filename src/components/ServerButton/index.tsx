@@ -1,34 +1,30 @@
 import React from 'react';
-
+import Logo from '../../assets/nathan.png';
 import { Button } from './styles';
 
-export interface Props{
+export interface Props {
   selected?: boolean;
   isHome?: boolean;
   hasNotifications?: boolean;
   mentions?: number;
-
 }
-const imgNath = 'https://media-exp1.licdn.com/dms/image/C4E03AQF4bFJeBPATuw/profile-displayphoto-shrink_200_200/0?e=1602720000&v=beta&t=h-QYOqKw2VNFWQJZidCHjZLmeIqBTopgsmjwWq2gzWc';
+
 const ServerButton: React.FC<Props> = ({
   selected,
-  isHome,
+  isHome ,
   hasNotifications,
   mentions
-
-}) =>{
+}) => {
   return (
-  <Button>
-   
-    className={selected ?'active': ''}
-    isHome= {isHome}
-    hasNotifications= {hasNotifications}
-    mentions= {mentions}
-
-    {isHome && <img src = {imgNath} alt='Server name' ></img> }
-  </Button>
-  )
-}
-
+    <Button
+      isHome={isHome}
+      hasNotifications={hasNotifications}
+      mentions={mentions}
+      className={selected ? 'active' : ''}
+    >
+      {isHome && <img src={Logo} alt="Nathan Novais" />}
+    </Button>
+  );
+};
 
 export default ServerButton;

@@ -34,6 +34,8 @@ html, body, #root{
     --discord: #6e86d6;
     --mention-detail: #f9a839;
     --mention-message: #413f3f;
+
+    --red: red;
  
     --link: #5d80d6;
  

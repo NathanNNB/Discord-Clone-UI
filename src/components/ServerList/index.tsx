@@ -2,14 +2,15 @@ import React from 'react';
 
 import { Container, Separator } from './styles';
 import ServerButton from '../ServerButton';
+
 const ServerList: React.FC = () => {
   return (
     <Container>
-      <ServerButton/>
+      <ServerButton isHome/>
 
       <Separator/>
       
-      <ServerButton/>
+      <ServerButton hasNotifications/>
       <ServerButton/>
       <ServerButton />
       <ServerButton/>
@@ -18,7 +19,7 @@ const ServerList: React.FC = () => {
       <ServerButton/>
       <ServerButton/>
       <ServerButton />
-      <ServerButton/>
+      <ServerButton hasNotifications/>
       <ServerButton mentions={10}/>
 
 

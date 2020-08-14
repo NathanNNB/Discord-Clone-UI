@@ -5,7 +5,7 @@ import ServerList from '../ServerList';
 const Layout: React.FC = () => {
   return (
     <Grid>
-      
+      <ServerList/>
     </Grid>
    
   );

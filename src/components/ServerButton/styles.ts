@@ -10,6 +10,19 @@ export const Button = styled.button<Props>`
 
   width: 48px;
   height: 48px;
-  margin-bottom: 8px;
-  background-color: 
+  border-radius: 50%;
+
+  margin-bottom: 8px; 
+
+  background-color: ${(props) =>
+    props.isHome ? 'var(--red)' : 'var(--primary)'};
+    
+  cursor: pointer;
+  position: relative;
+  >img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
 `;
